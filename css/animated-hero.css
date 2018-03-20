@@ -8,14 +8,14 @@
 }
 
 .balance-flow-breathe h2 {
-  font-size: 55px;
+  font-size: 50px;
   letter-spacing: 4px;
 }
 
 .balance {
   position: absolute;
   left: 0;
-  bottom: 305px;
+  bottom: 290px;
   width: 100%;
   padding-left: 3px;
   text-align: center;
@@ -27,7 +27,7 @@
 .flow {
   position: absolute;
   left: 0;
-  bottom: 240px;
+  bottom: 230px;
   width: 100%;
   text-align: center;
   animation-name: fadeIn;
@@ -39,7 +39,7 @@
 .breathe {
   position: absolute;
   right: 0;
-  bottom: 175px;
+  bottom: 170px;
   width: 100%;
   padding-left: 3px;
   text-align: center;
@@ -55,7 +55,7 @@
   width: 100%;
   padding: 0 9px;
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   letter-spacing: 2px;
   animation-name: fadeIn;
   animation-duration: 5s;
