@@ -23,8 +23,8 @@ time, mark, audio, video {
   margin: 0;
   border: 0;
   padding: 0;
-  font-size: inherit;
   font: inherit;
+  font-size: inherit;
   vertical-align: baseline;
 }
 
@@ -34,18 +34,18 @@ header, hgroup, main, menu, nav, section, summary {
 }
 
 html {
-  font-size: 100%;
   font-family: sans-serif;
+  font-size: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 
 a {
