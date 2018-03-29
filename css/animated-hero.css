@@ -1,10 +1,22 @@
+header {
+  width: 100%;
+  min-height: 400px;
+  max-height: 740px;
+  position: relative;
+  background-color: #507585;
+  background-image: url("../assets/images/troy-jarrell-hero-mobile.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .balance-flow-breathe {
   position: relative;
   left: 0;
   bottom: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 240, 190, 0.2);
+  background-color: rgba(219, 214, 204, 0.2);
 }
 
 .balance-flow-breathe h2 {
@@ -101,6 +113,12 @@
   }
 }
 
+@media only screen and (min-width : 600px) {
+  header {
+    background-image: url("../assets/images/troy-jarrell-hero.jpg");
+  }
+}
+
 @media only screen and (min-width : 700px) {
   header {
     min-height: 620px;
@@ -139,6 +157,7 @@
 
 @media only screen and (min-width : 1200px) {
   header {
+    background-attachment: fixed;
     min-height: 660px;
     max-height: 1000px;
   }

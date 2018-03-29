@@ -14,11 +14,17 @@
 }
 
 body {
-  font-family: "Hind", Verdana, sans-serif;
+  font-family: "Hind", Helvetica, Arial, sans-serif;
   font-size: 100%;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Lane", Verdana, sans-serif;
+h1, h2, h3, h4, h5 {
+  font-family: "Lane", Helvetica, Arial, sans-serif;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .container {
@@ -26,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 2.5%;
 }
 
+/* navigation / top-border */
 
 nav {
   position: fixed;
@@ -45,14 +52,12 @@ nav {
 .menu-button > div {
   width: 44px;
   height: 6px;
-  background-color: #a08c82;
+  background-color: #8b8074;
   border-radius: 6px;
   margin: 7px 0;
   transition: 0.4s;
 }
-.menu-button:hover > div {
-  background-color: #64828c;
-}
+
 .change > div:first-child {
   -webkit-transform: rotate(-45deg) translate(-9px, 9px);
   -moz-transform: rotate(-45deg) translate(-9px, 9px);
@@ -84,51 +89,64 @@ nav a:link, nav a:visited {
   color: #000;
   text-decoration: none;
 }
-nav a:hover, nav a:focus, nav a:active  {
+nav a:focus, nav a:active  {
   color: #000;
   text-decoration: underline;
 }
 
+/* main content */
+
 .content-container {
-  background-color: #d2c3af;
-  padding-bottom: 1em;
+  background-color: #dbd6cc;
 }
 
-header {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  top: -50px;
-  background-color: #a08c82;
-  background-image: url("../assets/images/washi.png");
-  background-position: center;
-  background-repeat: repeat;
-  /* background-size: cover; */
-  background-attachment: fixed;
-}
-
+/* main */
 main {
-  padding: 0 5%;
+  padding: 0 2.5%;
   line-height: 1.5;
 }
+main section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2em 0 0;
+}
+#intro {
+  max-width: 700px;
+  text-align: center;
+}
+#about-me {
+  max-width: 750px;
+}
+#coaching-intro, #other-services {
+  padding: 2em 0;
+}
+main h2, main h3, main h4, main h5 {
+  padding: 0.5em 0;
+}
 main h2 {
-  font-size: 2.4em;
+  font-size: 2em;
   text-align: center;
 }
 main h3 {
-  font-size: 2em;
+  font-size: 1.75em;
 }
 main h4 {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 main h5 {
-  font-size: 1.6em;
+  font-size: 1.25em;
 }
-main h6 {
-  font-size: 1.2em;
+main p {
+  padding: 0.5em 0;
 }
-p {
-  font-size: 1.04em;
+article > ul {
+  padding: 0.5em 1.25em;
+}
+main li {
+  list-style-image: url('../assets/icons/dot.png');
+}
+li > ul {
+  padding: 0 1.25em;
 }
 em {
   font-size: 1.2em;
@@ -139,181 +157,145 @@ i {
 small {
   font-size: 0.88em;
 }
-main ul {
-  padding: 0 1.5em;
-}
-main li {
-  list-style-image: url('../assets/icons/dot.png');
-  font-size: 1.04rem;
+strong {
+  font-family: "Lane", Helvetica, Arial, sans-serif;
+  font-size: 1.6em;
 }
 
-#intro {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-}
-#about-me {
-  max-width: 750px;
-  margin: 0 auto;
-}
+/* head shot */
 .head-shot {
-  max-width: 90%;
-  display: block;
-  margin: 1em auto 3em;
+  margin: 2em auto;
   border-radius: 50%;
 }
-#coaching-intro {
-  max-width: 990px;
-  margin: 0 auto;
-}
-#coaching-packages, #home-retreats, #other-services {
-  max-width: 900px;
-  margin: 0 auto;
-}
-#coaching-packages article {
-  padding-top: 1em;
-}
-#about-me h2, #coaching-intro h2, #coaching-packages h2, #coaching-packages h3, #home-retreats h2, #home-retreats h3, #home-retreats h5, #other-services h2 {
-  padding: 0.5em;
-}
-#intro h5, #about-me article > p, #coaching-intro p, #coaching-intro ul {
-  margin: 1em 0;
-}
-#intro article > p, #coaching-packages article > p, #coaching-packages ul, #home-retreats article > p, #home-retreats ul, #other-services p, #other-services ul{
-  margin: 1em 0.5em;
-}
-#other-services ul ul, #home-retreats ul ul {
-  margin: 0;
-}
 
-.button-container, .quote-container {
+/* cta button */
+.cta-button {
   padding: 2em;
   text-align: center;
 }
-.cta-button {
+.cta-button div {
   display: inline-block;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   border: 1px solid dimgray;
+  background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
-.cta-button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-.cta-button:active {
+.cta-button div:active {
   background-color: rgba(0, 0, 0, 0.2);
 }
-.cta-button strong {
-  font-family: "Lane", Verdana, sans-serif;
-  font-size: 1.6em;
-}
-.quote {
-  display: inline-block;
-  padding: 0.5em 2em;
-  border: 1px solid dimgray;
-}
-.quote p {
-  margin: 0.5em;
-}
-.quote p:last-child, .testimonial p:last-child {
-  text-align: right;
-}
+
+/* been called */
 .been-called {
   display: none;
   max-width: 550px;
-  padding: 0.5em 0;
+  padding: 0 0 2em;
   margin: 0 auto;
   text-align: center;
-}
-.been-called p {
-  margin: 0.5em 0;
 }
 .been-called em {
   font-weight: bold;
 }
 .been-called small {
-  cursor: pointer;
-  font-size: 0.85em;
-}
-.been-called small:hover, .testimony-button:hover, #coaching-packages small:hover, .testimony-button:hover, #home-retreats small:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
+
+/* divider */
+.divider {
+  padding: 1em;
+}
+
+/* quote */
+.quote {
+  padding: 1em;
+  text-align: center;
+}
+.quote div {
+  display: inline-block;
+  padding: 0.75em 2em;
+  border: 1px solid dimgray;
+}
+.quote p:last-child {
+  text-align: right;
+}
+
+/* testimony */
 .testimony-container {
+  position: relative;
   max-width: 770px;
-  padding: 2em 25px;
+  min-height: 5em;
+  padding: 0 1.5em 2em;
   margin: 0 auto;
   text-align: center;
 }
 .testimony-button {
-  display: inline-block;
-  padding: 0.5em;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-decoration: underline;
   cursor: pointer;
 }
 .testimony {
   display: none;
-}
-.testimony p {
-  margin: 0.5em 0;
+  font-size: 0.95em;
 }
 .testimony p:first-child {
   text-align: left;
-  font-size: 1.01em;
 }
 .testimony p:nth-child(2) {
   text-align: right;
 }
 .testimony small {
+  text-decoration: underline;
   cursor: pointer;
 }
-.divider {
-  padding: 25px;
-}
-.divider img {
-  max-width: 80%;
-  display: block;
-  margin: 0 auto;
-}
+
+/* details */
 .details {
   display: none;
 }
+.details-button {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
-footer#contact {
-  background-color: white;
-  padding-bottom: 40px;
+
+/* footer */
+
+footer {
+  background-color: #ffffff;
+  padding: 1em 0 3em;
   text-align: center;
-  font-size: 1rem;
   position: relative;
   z-index: 1;
 }
-.mandala {
-  display: block;
-  margin: 40px auto 0;
-  max-width: 85%;
-}
 #contact p {
-  margin: 1em;
+  padding: 0.5em 0;
 }
-#contact em {
+#contact p:nth-child(odd) {
   font-weight: bold;
 }
 #contact p:first-child {
-  font-family: "Lane", Verdana, sans-serif;
-  font-size: 2.5em;
-  margin: 0.5em 0 2em;
+  font-size: 1.5em;
+  padding: 0.5em 0 2em;
 }
+
 
 .bottom-border {
   width: 100%;
-  min-height: 50px;
+  height: 50px;
   background-color: #ffffff;
   position: fixed;
   left: 0;
   bottom: 0;
 }
 
+
 .social-container {
   position: fixed;
   bottom: 0;
-  right: 5%;
+  right: 2.5%;
   padding: 6px 0;
   overflow: auto;
   z-index: 2;
@@ -324,13 +306,16 @@ footer#contact {
   margin: 0 6px;
   overflow: hidden;
 }
+.social-icon:first-child {
+  margin: 0 0 0 6px;
+}
 .social-icon img {
-  background-color: #a08c82;
+  background-color: #8b8074;
   width: 38px;
   padding: 9px;
   vertical-align: middle;
 }
-.social-icon:hover img {
+.social-icon:active img {
   background-color: #64828c;
 }
 .instagram, .medium {
@@ -347,8 +332,31 @@ footer#contact {
   .container {
     padding: 0 5%;
   }
+  main {
+    padding: 0 5%;
+  }
+  main h2 {
+    font-size: 2.5em;
+  }
+  main h3 {
+    font-size: 2em;
+  }
+  main h4 {
+    font-size: 1.75em;
+  }
+  main h5 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1.04em;
+  }
+  main ul {
+    font-size: 1.04rem;
+  }
+  .social-container {
+    right: 5%;
+  }
 }
-
 @media only screen and (min-width : 1000px) {
   .container {
     padding: 0 50px;
@@ -366,10 +374,22 @@ footer#contact {
     padding: 0;
     margin: 16px;
   }
-  footer#contact {
-    font-size: 1.15em;
+  main {
+    padding: 0 50px;
   }
   .social-container {
     right: 50px;
   }
 }
+@media only screen and (min-width : 1200px) {
+  nav a:hover  {
+    text-decoration: underline;
+  }
+  #contact {
+    font-size: 1.15em;
+  }
+  .social-icon:hover img {
+    background-color: #507585;
+  }
+}
+/* END */
