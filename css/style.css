@@ -199,6 +199,11 @@ strong {
   text-decoration: underline;
   cursor: pointer;
 }
+@media only screen and (max-width : 500px) {
+  .email {
+    font-size: 0.8em;
+  }
+}
 
 /* divider */
 .divider {
@@ -231,8 +236,8 @@ strong {
 .testimony-button {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
+  left: 0;
+  width: 100%;
   text-decoration: underline;
   cursor: pointer;
 }
