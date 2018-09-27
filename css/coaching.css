@@ -1,0 +1,99 @@
+header {
+  margin-top: 50px;
+  width: 100%;
+  position: relative;
+  background-color: rgb(220, 200, 190);
+  background-image: url("../assets/images/matt-coaching.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-overlay {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 230, 130, 0.3);
+}
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+#coaching-intro {
+  max-width: 990px;
+  margin: 0 auto;
+}
+#coaching-packages {
+  max-width: 900px;
+  margin: 0 auto;
+}
+#coaching-packages article {
+  padding-top: 1em;
+}
+#coaching-packages h2, #coaching-packages h3{
+  padding: 0.5em 0;
+}
+#coaching-intro p, #coaching-intro ul {
+  margin: 1em 0;
+}
+#coaching-packages article > p, #coaching-packages ul {
+  margin: 1em 0.5em;
+}
+.quote {
+  padding: 2em;
+  text-align: center;
+}
+.quote div {
+  display: inline-block;
+  padding: 0.5em 2em;
+  border: 1px solid dimgray;
+}
+.quote p {
+  margin: 0.5em;
+}
+.quote p:last-child, .testimonial p:last-child {
+  text-align: right;
+}
+.testimony-button, #coaching-packages small, .testimony-button {
+  text-decoration: underline;
+}
+.testimony-container {
+  max-width: 770px;
+  padding: 2em 25px;
+  margin: 0 auto;
+  text-align: center;
+}
+.testimony-button {
+  display: inline-block;
+  padding: 0.5em;
+  cursor: pointer;
+}
+.testimony {
+  display: none;
+}
+.testimony p {
+  margin: 0.5em 0;
+}
+.testimony p:first-child {
+  text-align: left;
+  font-size: 1.01em;
+}
+.testimony p:nth-child(2) {
+  text-align: right;
+}
+.testimony small {
+  cursor: pointer;
+}
+.details {
+  display: none;
+}
+
+.mandala {
+  display: block;
+  max-width: 80%;
+  padding-bottom: 40px;
+  margin: 5px auto 10px;
+}

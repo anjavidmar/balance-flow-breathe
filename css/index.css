@@ -1,0 +1,299 @@
+header {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 740px;
+  position: relative;
+  top: -50px;
+  background-color: rgb(220, 200, 190);
+  background-image: url("../assets/images/chris-lawton-index.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.balance-flow-breathe {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(220, 100, 65, 0.2);
+}
+
+.balance-flow-breathe h2 {
+  font-size: 55px;
+  letter-spacing: 4px;
+}
+
+.balance {
+  position: absolute;
+  left: 0;
+  bottom: 305px;
+  width: 100%;
+  padding-left: 3px;
+  text-align: center;
+  animation-name: fadeIn;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+}
+.flow {
+  position: absolute;
+  left: 0;
+  bottom: 240px;
+  width: 100%;
+  text-align: center;
+  animation-name: fadeIn;
+  animation-duration: 5s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+}
+
+.breathe {
+  position: absolute;
+  right: 0;
+  bottom: 175px;
+  width: 100%;
+  padding-left: 3px;
+  text-align: center;
+  animation-name: fadeIn;
+  animation-duration: 5s;
+  animation-delay: 6s;
+  animation-fill-mode: both;
+}
+.wellbeing {
+  position: absolute;
+  left: 0;
+  bottom: 70px;
+  width: 100%;
+  padding: 0 9px;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 2px;
+  animation-name: fadeIn;
+  animation-duration: 5s;
+  animation-delay: 8s;
+  animation-fill-mode: both;
+}
+
+@media only screen and (min-width : 455px) {
+  .balance {
+    bottom: 265px;
+    padding-left: 10px;
+    text-align: left;
+  }
+  .flow {
+    bottom: 200px;
+  }
+  .breathe {
+    bottom: 135px;
+    padding-right: 10px;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width : 530px) {
+  header {
+    max-height: 810px;
+  }
+  .balance-flow-breathe h2 {
+    font-size: 65px;
+    letter-spacing: 6px;
+  }
+  .balance {
+    bottom: 290px;
+  }
+  .flow {
+    bottom: 215px;
+  }
+  .breathe {
+    bottom: 140px;
+  }
+  .wellbeing {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (min-width : 700px) {
+  header {
+    min-height: 620px;
+    max-height: 850px;
+  }
+  .balance-flow-breathe h2 {
+    font-size: 70px;
+    letter-spacing: 7px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .balance, .breathe {
+    width: 50%;
+    padding: 0;
+  }
+  .balance {
+    bottom: 305px;
+  }
+  .flow {
+    bottom: 225px;
+  }
+  .breathe {
+    bottom: 145px;
+  }
+  .wellbeing {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width : 1000px) {
+  .balance, .breathe {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width : 1200px) {
+  header {
+    min-height: 660px;
+    max-height: 1000px;
+  }
+  .balance-flow-breathe h2 {
+    font-size: 80px;
+    letter-spacing: 10px;
+  }
+  .balance, .breathe {
+    width: 40%;
+    padding: 0;
+  }
+  .balance {
+    bottom: 330px;
+  }
+  .flow {
+    bottom: 240px;
+  }
+  .breathe {
+    bottom: 150px;
+  }
+  .wellbeing {
+    font-size: 55px;
+    letter-spacing: 3px;
+  }
+}
+
+@media only screen and (min-width : 1800px) {
+  header {
+    min-height: 740px;
+    max-height: 1300px;
+  }
+  .balance-flow-breathe h2 {
+    font-size: 120px;
+    letter-spacing: 15px;
+  }
+  .balance {
+    bottom: 440px;
+  }
+  .flow {
+    bottom: 310px;
+  }
+  .breathe {
+    bottom: 180px;
+  }
+  .wellbeing {
+    font-size: 85px;
+    letter-spacing: 10px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.chevron-container {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+}
+.chevron {
+  margin: 5px auto;
+  position: relative;
+  height: 25px;
+  width: 100px;
+  animation-name: fadeIn;
+  animation-duration: 5s;
+  animation-delay: 10s;
+  animation-fill-mode: both;
+}
+
+.chevron:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 25%;
+  width: 50%;
+  background: rgba(000, 000, 000, 0.6);
+  -webkit-transform: skew(0deg, 20deg);
+  -moz-transform: skew(0deg, 20deg);
+  -ms-transform: skew(0deg, 20deg);
+  -o-transform: skew(0deg, 20deg);
+  transform: skew(0deg, 20deg);
+}
+.chevron:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 0;
+  height: 25%;
+  width: 50%;
+  background: rgba(000, 000, 000, 0.6);
+  -webkit-transform: skew(0deg, -20deg);
+  -moz-transform: skew(0deg, -20deg);
+  -ms-transform: skew(0deg, -20deg);
+  -o-transform: skew(0deg, -20deg);
+  transform: skew(0deg, -20deg);
+}
+
+.content-container {
+  position: relative;
+  background-color: rgb(220, 200, 190);
+  background-image: url("../assets/images/asdrubal-luna-index-repeate.jpg");
+  background-repeat: repeat-y;
+  background-position: top;
+  background-size: contain;
+  padding-bottom: 40px;
+}
+.container-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(140, 90, 70, 0.2);
+}
+#intro {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+#intro h4 {
+  padding-top: 2em;
+}
+#intro h5 {
+  padding-top: 0.5em;
+}
+#intro article > p {
+  margin: 1em 0.5em;
+}
+a:link, a:visited, a:active {
+  color: black;
+}
+.birdy {
+  padding-top: 2em;
+}

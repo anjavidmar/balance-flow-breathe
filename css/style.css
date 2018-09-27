@@ -1,0 +1,283 @@
+@font-face {
+  font-family: "Hind";
+  src: url("../assets/fonts/Hind-Light.ttf")
+}
+@font-face {
+  font-family: "Lane";
+  src: url("../assets/fonts/Lane-Narrow.ttf")
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Hind", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+}
+h1, h2, h3, h4, h5 {
+  font-family: "Lane", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  min-width: 300px;
+  padding: 0 2.5%;
+}
+
+/* NAVIGATION */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 50px;
+  background-color: #ffffff;
+  z-index: 2;
+}
+.menu-button {
+  float: right;
+  cursor: pointer;
+  margin: 0 2.5% 0 0;
+  padding: 2px;
+}
+.menu-button > div {
+  width: 44px;
+  height: 6px;
+  background-color: #8b8074;
+  border-radius: 6px;
+  margin: 7px 0;
+  transition: 0.4s;
+}
+.menu-button:hover > div {
+  background-color: rgb(220, 100, 65);
+}
+.change > div:first-child {
+  -webkit-transform: rotate(-45deg) translate(-9px, 9px);
+  -moz-transform: rotate(-45deg) translate(-9px, 9px);
+  -ms-transform: rotate(-45deg) translate(-9px, 9px);
+  -o-transform: rotate(-45deg) translate(-9px, 9px);
+  transform: rotate(-45deg) translate(-9px, 9px);
+}
+.change > div:nth-child(2) {
+  opacity: 0;
+}
+.change > div:last-child {
+  -webkit-transform: rotate(45deg) translate(-9px, -9px);
+  -moz-transform: rotate(45deg) translate(-9px, -9px);
+  -ms-transform: rotate(45deg) translate(-9px, -9px);
+  -o-transform: rotate(45deg) translate(-9px, -9px);
+  transform: rotate(45deg) translate(-9px, -9px);
+}
+.menu {
+  clear: both;
+  display: none;
+  padding: 9px 0;
+}
+.menu > li {
+  text-align: center;
+  font-size: 18px;
+  padding: 9px 0;
+}
+nav a:link, nav a:visited {
+  color: #000;
+  text-decoration: none;
+}
+nav a:hover, nav a:focus, nav a:active  {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* MAIN */
+
+.pages .content-container {
+  background-color: rgb(229, 218, 212);
+  /* margin-top: 50px; */
+  margin-bottom: 45px;
+}
+main {
+  padding: 0 2.5%;
+  line-height: 1.5;
+}
+main section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+main h2, main h3 {
+  padding: 0.5em 0;
+}
+main h2 {
+  font-size: 2em;
+  text-align: center;
+}
+main h3 {
+  font-size: 1.75em;
+}
+main h4 {
+  font-size: 1.6em;
+}
+main h5 {
+  font-size: 1.5em;
+}
+main p {
+  font-size: 1.04em;
+}
+em {
+  font-size: 1.2em;
+}
+.email {
+  font-size: 1em;
+}
+i {
+  font-style: italic;
+}
+small {
+  font-size: 0.88em;
+}
+strong {
+  font-family: "Lane", Helvetica, Arial, sans-serif;
+  font-size: 1.6em;
+}
+article > ul {
+  padding: 0.5em 1.25em;
+}
+main li {
+  list-style-image: url('../assets/icons/dot.png');
+  font-size: 1.04rem;
+}
+li > ul {
+  padding: 0 1.25em;
+}
+
+.button-container {
+  padding: 2em;
+  text-align: center;
+}
+.cta-button {
+  display: inline-block;
+  padding: 1em;
+  border: 1px solid #999;
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.cta-button:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.cta-button strong {
+  font-family: "Lane", Helvetica, Arial, sans-serif;
+  font-size: 1.6em;
+}
+
+.been-called {
+  display: none;
+  max-width: 550px;
+  padding: 0.5em 0;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+}
+.been-called p {
+  margin: 0.5em 0;
+}
+.been-called em {
+  font-weight: bold;
+}
+.been-called small {
+  cursor: pointer;
+  font-size: 0.85em;
+}
+.been-called small {
+  text-decoration: underline;
+}
+input {
+  font-family: "Hind", Helvetica, Arial, sans-serif;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  min-height: 50px;
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.social-container {
+  position: fixed;
+  bottom: 0;
+  right: 2.5%;
+  padding: 6px 0;
+  overflow: auto;
+  z-index: 2;
+}
+.social-icon {
+  float: right;
+  border-radius: 50%;
+  margin: 0 6px;
+  overflow: hidden;
+}
+.social-icon:first-child {
+  margin: 0;
+}
+.social-icon img {
+  background-color: #a08c82;
+  width: 38px;
+  padding: 9px;
+  vertical-align: middle;
+}
+.social-icon:hover img {
+  background-color: rgb(220, 100, 65);
+}
+.instagram, .medium {
+  padding: 8px;
+}
+.linkedin {
+  padding: 8px 9px 10px 9px;
+}
+.twitter {
+  padding: 9px 7px 7px 9px;
+}
+
+@media only screen and (min-width : 500px) {
+  .container {
+    padding: 0 5%;
+  }
+  .menu-button {
+    margin: 0 5% 0 0;
+  }
+  .email {
+    font-size: 1.2em;
+  }
+  .social-container {
+    right: 5%;
+  }
+}
+
+@media only screen and (min-width : 1000px) {
+  .container {
+    padding: 0 50px;
+  }
+  .menu-button {
+    display: none;
+  }
+  .menu {
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
+  .menu > li {
+    display: inline-block;
+    padding: 0;
+    margin: 16px;
+  }
+  .social-container {
+    right: 50px;
+  }
+}

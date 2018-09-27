@@ -1,0 +1,43 @@
+.content-container {
+  width: 100%;
+  height: 100vh;
+  /* max-height: 740px; */
+  position: relative;
+  background-color: rgb(220, 200, 190);
+  background-image: url("../assets/images/ozark-drones-contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: rgba(220, 200, 190, 0.2);
+}
+
+address {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.background {
+  background-color: rgb(229, 218, 212);
+  display: inline-block;
+  padding: 0 1em;
+}
+
+address p {
+  padding: 0.5em 0;
+}
+
+address em, address strong {
+  font-weight: bold;
+}
