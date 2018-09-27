@@ -41,6 +41,9 @@ h1 {
 .details {
   display: none;
 }
+.details-button {
+  cursor: pointer;
+}
 
 .mandala {
   display: block;
