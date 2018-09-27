@@ -1,0 +1,53 @@
+header {
+  margin-top: 50px;
+  width: 100%;
+  position: relative;
+  background-color: rgb(220, 200, 190);
+  background-image: url("../assets/images/david-kovalenko-retreats.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-overlay {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 230, 130, 0.3);
+}
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+#home-retreats {
+  max-width: 900px;
+  margin: 0 auto;
+}
+#home-retreats h2, #home-retreats h3, #home-retreats h5 {
+  padding: 0.5em 0;
+}
+#home-retreats article > p, #home-retreats ul {
+  margin: 1em 0.5em;
+}
+#home-retreats ul ul {
+  margin: 0;
+}
+#home-retreats small {
+  text-decoration: underline;
+}
+.details {
+  display: none;
+}
+.details-button {
+  cursor: pointer;
+}
+
+.mandala {
+  display: block;
+  max-width: 80%;
+  padding-bottom: 40px;
+  margin: 5px auto 10px;
+}

@@ -1,58 +1,65 @@
-var windowHeight = window.innerHeight;
-var header = document.getElementById('home');
-
-header.style.height = windowHeight - 50 + 'px';
-
+//mobile menu:
 function menuButton(x) {
   x.classList.toggle("change");
   $(".menu").slideToggle(1000);
 }
 
+//call to action:
 var beenCalled = document.getElementsByClassName("been-called");
+console.log(beenCalled);
 
 function callToAction(i) {
-  var showThis = beenCalled[i];
-  $(showThis).slideDown(1000);
+  var show = beenCalled[i];
+  $(show).slideDown(1000);
 }
 function hideCall(i) {
-  var hideThis = beenCalled[i];
-  $(hideThis).slideUp(1000);
+  var hide = beenCalled[i];
+  $(hide).slideUp(1000);
 }
 
+//testimony:
 var testimonyButton = document.getElementsByClassName("testimony-button");
 var testimony = document.getElementsByClassName("testimony");
 
 function showTestimony(i) {
-  var showThis = testimony[i];
-  var hideThis = testimonyButton[i];
-  $(hideThis).hide();
-  $(showThis).slideDown(1500)
+  var show = testimony[i];
+  var hide = testimonyButton[i];
+  $(hide).css('opacity', '0');
+  $(show).slideDown(1500)
+  // setTimeout(
+  //   function(){
+  //     $(show).slideDown(1500)
+  //   }, 500
+  // )
 }
 function hideTestimony(i) {
-  var hideThis = testimony[i];
-  var showThis = testimonyButton[i];
-  $(hideThis).slideUp(1500);
+  var hide = testimony[i];
+  var show = testimonyButton[i];
+  $(hide).slideUp(1500);
   setTimeout(
     function(){
-      $(showThis).show();
-    }, 1500
+      $(show).css('opacity', '1');
+    }, 1300
   )
 }
 
 var details = document.getElementsByClassName("details");
 var detailsButton = document.getElementsByClassName("details-button");
 
+console.log(details, detailsButton);
+
+
 function showDetails(i) {
-  var showThis = details[i];
-  var hideThis = detailsButton[i];
+  var show = details[i];
+  var hide = detailsButton[i];
   var newOnClick = 'hideDetails(' + i + ')';
-  $(showThis).slideDown(1500);
-  $(hideThis).attr('onclick', newOnClick).html('[ Hide Details ]');
+  $(show).slideDown(1500);
+  $(hide).attr('onclick', newOnClick).html('[ Hide Details ]');
 }
 function hideDetails(i) {
-  var hideThis = details[i];
-  var showThis = detailsButton[i];
+  var hide = details[i];
+  var show = detailsButton[i];
   var newOnClick = 'showDetails(' + i + ')';
-  $(hideThis).slideUp(1500);
-  $(showThis).attr('onclick', newOnClick).html('[ Show Details ]');
+  $(hide).slideUp(1500);
+  $(show).attr('onclick', newOnClick).html('[ Show Details ]');
 }

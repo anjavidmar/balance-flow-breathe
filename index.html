@@ -10,14 +10,13 @@
   <meta name="keywords" content="coaching, wellbeing, balance, london, mindfulness, massage" />
   <link rel="stylesheet" type="text/css" href="./css/reset.css" />
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
-  <link rel="stylesheet" type="text/css" href="./css/animated-hero.css" />
+  <link rel="stylesheet" type="text/css" href="./css/index.css" />
 </head>
 
-<body>
+<body  class="index autum">
   <div class="container">
 
     <nav>
-
       <div class="menu-button" onclick="menuButton(this)">
         <div></div>
         <div></div>
@@ -26,28 +25,31 @@
 
       <ul class="menu">
         <li>
-          <a href="#home">Home</a>
+          <a href="./index.html">Home</a>
         </li>
         <li>
-          <a href="#about-me">About Me</a>
+          <a href="./about.html">About Me</a>
         </li>
         <li>
-          <a href="#coaching-intro">Coaching</a>
+          <a href="./coaching.html">Coaching</a>
         </li>
         <li>
-          <a href="#home-retreats">Home Retreats</a>
+          <a href="./mindfulness.html">Mindfulness</a>
         </li>
         <li>
-          <a href="#other-services">Other Services</a>
+          <a href="./home-retreats.html">Home Retreats</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="./other-services.html">Other Services</a>
+        </li>
+        <li>
+          <a href="./contact.html">Contact</a>
         </li>
       </ul>
-
     </nav>
 
     <div class="content-container">
+      <div class="container-overlay"></div>
 
       <header id="home">
         <div class="balance-flow-breathe">
@@ -95,9 +97,11 @@
 
             <p>Does that sound like something you're ready to dive into?</p>
 
-            <div class="cta-button">
-              <div onclick="callToAction(0)">
-                <strong>Yes please, I'm ready for change!</strong>
+            <div class="button-container">
+              <div class="cta-button">
+                <div onclick="callToAction(0)">
+                  <strong>Yes please, I'm ready for change!</strong>
+                </div>
               </div>
             </div>
 
@@ -114,493 +118,60 @@
               <p><em class="email">
                 louise@balanceflowbreathe.com
               </em></p>
+              <form>
+                <p>
+                  Subscribe to balance, flow, breath...
+                </p>
+                <p>
+                  <input id="new-subscriber" type="text" name="email-address" />
+                  <input id="sign-up" type="submit" value="Sign Up">
+                </p>
+              </form>
               <p><small onclick="hideCall(0)">[ Hide ]</small></p>
             </div>
 
           </article>
         </section>
-
-        <div class="divider"><img src="./assets/icons/divider.png" alt="content divider" /></div>
-
-        <section id="about-me">
-          <article>
-
-            <h2>About Me</h2>
-
-            <img class="head-shot" src="./assets/images/Louise.jpg" alt="photo of Louise" />
-
-            <p>
-              Hi I'm Louise, I am a transformational wellbeing coach, mindfulness facilitator and registered Occupational Therapist with a career focused on self-management, stress-management, behaviour change and confidence building.
-            </p>
-            <p>
-              During my career I've seen first-hand the impact that a lack of purpose and meaning in life has on the quality of people's lives and have made it my mission to make sure people like you shift that 'stuckness' into a thriving life!
-            </p>
-            <p>
-              Having struggled personally with stress and overwhelm, a lack of confidence and feeling lost and not myself, my experience has led me to believe, to know, that there is another way to do life, it feels easier and is a much freer way of living — I promise!
-            </p>
-            <p>
-              So, if you're ready for change and a lasting improvement to your health, wellbeing and daily life — contact me for a complementary, and obligation free, 30 minute discovery session (also known as a friendly chat!) and we can see if we are a good fit to work together!
-            </p>
-
-            <div class="cta-button">
-              <div onclick="callToAction(1)">
-                <strong>Yes please, I'd like to know more!</strong>
-              </div>
-            </div>
-
-            <div class="been-called">
-              <p>
-                Contact me on:
-              </p>
-              <p><em>
-                07900 578183
-              </em></p>
-              <p>
-                or at:
-              </p>
-              <p><em class="email">
-                louise@balanceflowbreathe.com
-              </em></p>
-              <p><small onclick="hideCall(1)">[ Hide ]</small></p>
-            </div>
-
-          </article>
-        </section>
-
-        <div class="divider"><img src="./assets/icons/divider.png" alt="content divider" /></div>
-
-        <section id="coaching-intro">
-          <article>
-
-            <h2>Transformational Coaching</h2>
-
-            <p>To help you on your journey of self-discovery and real change I have put together three coaching packages that lay out the foundations to achieving your personal goals and intentions.</p>
-
-            <p>These packages are just an outline – each package can be tailored to your needs AND your timeframe, if you just want coaching without the extras of course this can also be done!</p>
-
-            <p>What I love the most is finding that spark and building a trusting relationship with my clients, I have spent many years working one to one and facilitating groups, I provide a safe, open, and supportive coaching space for possibilities to come into fruition!</p>
-
-            <p>Who are my clients?</p>
-            <ul>
-              <li>Busy 'stressed' working people</li>
-              <li>Health care professionals</li>
-              <li>Corporate professionals</li>
-              <li>Clients with an existing health care condition*</li>
-              <li>Clients wishing to prevent health care conditions*</li>
-              <li>Creatives and entrepreneurs</li>
-            </ul>
-            <p>
-              <small>*Please note I am a qualified Occupational Therapist skilled in working with behaviour change, disease self-management and stress management.</small>
-            </p>
-            <p>What will you gain from working with me?!</p>
-            <ul>
-              <li>Reduced stress levels</li>
-              <li>Clarity</li>
-              <li>A tool box of health and wellness strategies</li>
-              <li>Renewed energy and lust for life</li>
-              <li>Numerous possibilities</li>
-              <li>Self-efficacy: the belief that you can make a change!</li>
-              <li>Momentum!</li>
-            </ul>
-
-          </article>
-        </section>
-
-        <div class="quote">
-          <div>
-            <p><i>Nothing's impossible - the word itself says "I'm possible"</i></p>
-            <p> — Audrey Hepburn</p>
-          </div>
-        </div>
-
-        <section id="coaching-packages">
-          <h2>Transformational Coaching Packages</h2>
-          <article class="package1">
-
-            <h3>"Let's Do This!" Coaching Package</h3>
-            <p>It takes 66 days to change a habit. Take things at a steady pace and see the transformation that takes place.</p>
-
-            <p>Designed to get you going, "Let's Do This!" includes six coaching sessions over a 10 week period (though this can be adjusted to suit your individual preferences).</p>
-
-            <p>What You Get:</p>
-
-            <ul class="details">
-              <li>Complimentary 30 minute discovery call (via phone or Skype)</li>
-              <li>Holistic assessment to help you identify where you are now and where you want to be</li>
-              <li>90 minute Intention Setting Coaching Session</li>
-              <li>Five 1 hour coaching sessions (planned fortnightly)</li>
-              <li>Follow up notes from each session together</li>
-              <li>Worksheet templates to keep you on track</li>
-              <li>10 Call Boosters (approximately 10 minutes each, once a week on average)</li>
-              <li>Email support throughout the entire 10 weeks</li>
-            </ul>
-            <p><small class="details-button" onclick="showDetails(0)">[ Show Details ]</small></p>
-
-            <p>This is the package for you if you've made a decision for REAL change and are set on doing it but have tried making changes before without sustaining them.</p>
-
-            <div class="cta-button">
-              <div onclick="callToAction(2)">
-                <strong>Let's Do This!</strong>
-              </div>
-            </div>
-
-            <div class="been-called">
-              <p>
-                For more information or to arrange a complementary, and obligation free, discovery session (also known as a friendly chat!) contact me on:
-              </p>
-              <p><em>
-                07900 578183
-              </em></p>
-              <p>
-                or at:
-              </p>
-              <p><em class="email">
-                louise@balanceflowbreathe.com
-              </em></p>
-              <p><small onclick="hideCall(2)">[ Hide ]</small></p>
-            </div>
-
-            <div class="testimony-container">
-              <div class="testimony-button"  onclick="showTestimony(0)">
-                <p>Click to read about Caroline's experience.</p>
-              </div>
-
-              <div class="testimony">
-                <p>
-                  I started having coaching sessions with Louise after I developed sleeping problems (mainly insomnia, which I'd struggled with for quite a while) and had become a bit stressed out worrying about too many things – it felt like a bit of overload. Talking through things with Louise was really invaluable; she really helped me think clearly and more calmly, let go of negative thought patterns and helped me get the root of areas where I feel a bit 'stuck'. I came away from the sessions feeling lighter, calmer and happier, which has actually really helped me overall (not to mention sleep better). I have met a couple of other coaches over the years and would recommend Louise by far – she has such a natural, warm and calming nature which can put anyone at ease, and has such a talent for helping you see through the fog and relaxing your mind. Louise has really helped to shift my outlook, which has helped me in more ways than I originally thought, and I would 100% recommend her. Thank you!
-                </p>
-                <p>
-                  — Caroline, Reading
-                </p>
-                <p><small onclick="hideTestimony(0)">[ Hide Caroline's Testimony ]</small></p>
-              </div>
-            </div>
-
-          </article>
-          <article class="package2">
-
-            <h3>"Live a Life You LOVE!" Coaching Package</h3>
-            <p>Connect to your self-care, self-worth and reframe your entire life!</p>
-
-            <p>Self-compassion is the key to opening your heart, tapping into your true purpose and creating the kind of life that gets you jumping out of bed each morning with excitement to face the day. "Live a Live You Love!" includes six coaching sessions over a 10 week period (though this can be adjusted to suit your individual preferences).</p>
-
-            <p>What You Get:</p>
-            <ul class="details">
-              <li>Complimentary 30 minute discovery call (via phone or Skype)</li>
-              <li>Holistic assessment to help you identify where you are now and where you want to be</li>
-              <li>90 minute Intention Setting Coaching Session</li>
-              <li>Five 1 hour coaching sessions (planned fortnightly) which include a 5 minute meditation</li>
-              <li>Follow up notes from each session together</li>
-              <li>Worksheet templates to keep you on track</li>
-              <li>10 Call Boosters (approximately 10 minutes each, once a week on average)</li>
-              <li>Email support throughout the entire 10 weeks</li>
-            </ul>
-            <p><small class="details-button" onclick="showDetails(1)">[ Show Details ]</small></p>
-
-
-            <p>This is the package for you if you often feel overwhelmed by life, have low confidence and self-worth or feel lost and a bit helpless.</p>
-
-            <div class="cta-button">
-              <div onclick="callToAction(3)">
-                <strong>I'm Ready to Live a Life I LOVE</strong>
-              </div>
-            </div>
-
-            <div class="been-called">
-              <p>
-                For more information or to arrange a complementary, and obligation free, discovery session (also known as a friendly chat!) contact me on:
-              </p>
-              <p><em>
-                07900 578183
-              </em></p>
-              <p>
-                or at:
-              </p>
-              <p><em class="email">
-                louise@balanceflowbreathe.com
-              </em></p>
-              <p><small onclick="hideCall(3)">[ Hide ]</small></p>
-            </div>
-
-            <div class="testimony-container">
-              <div class="testimony-button"  onclick="showTestimony(1)">
-                <p>Click to read about Sheetal's experience.</p>
-              </div>
-
-              <div class="testimony">
-                <p>
-                  I never thought that I would need coaching. I felt that people would look bad on it. But it’s one of the best decisions I have made. It made me stop and think, who am I and how do I feel and what do I do. It’s really changed me to want to live a more positive and well life. My journey begins and I’m looking forward to the future. I had an instant connection and willingness to talk to Louise. She is calm and warm, making you feel relaxed and able to talk about difficult issues. After working with Louise I am now more positive about the future and just ready to live my life, whatever it may be. My self-worth has improved significantly, I feel happier and understand how to get back to a calm state when I get stressed. Words cannot express how grateful I am to Louise.
-                </p>
-                <p>
-                  — Sheetal, London
-                </p>
-                <p><small onclick="hideTestimony(1)">[ Hide Sheetal's Testimony ]</small></p>
-              </div>
-            </div>
-
-          </article>
-          <article class="package3">
-
-            <h3>"Whole Life Living" Premium Coaching Package</h3>
-
-            <p>Wouldn't it be great to know where you were at in each area of your life?</p>
-            <p>This package offers a complete life overhaul that leaves no stone unturned and no door locked!</p>
-
-            <p>Don't even know where to begin? "Whole Life Living" will bring you a sense of clarity and focus by examining both your inner world and outer worlds, shining a light across all aspects of your life to achieve awareness on what needs attention to lead to empowering and fulfilling long term change.</p>
-
-            <p>This package includes 12 coaching sessions over a six month period.</p>
-            <p>An optional Home Cleanse session can be added.</p>
-
-            <p>What You Get:</p>
-            <ul class="details">
-              <li>Complimentary 30 minute discovery call (via phone or Skype)</li>
-              <li>Holistic assessment to help you identify where you are now and where you want to be</li>
-              <li>90 minute Intention Setting Coaching Session</li>
-              <li>11 one hour coaching sessions (planned fortnightly) which include a 5 minute meditation</li>
-              <li>A 'Home Cleanse': a decluttering process with a pre coaching/visualization and conscious conversation throughout (approximately 4 hours)</li>
-              <li>Follow up notes from each session together</li>
-              <li>Worksheet templates to keep you on track</li>
-              <li>20 Call Boosters (approximately 10 minutes each)</li>
-              <li>Email support throughout the entire six months</li>
-            </ul>
-            <p><small class="details-button" onclick="showDetails(2)">[ Show Details ]</small></p>
-
-
-            <p>This is the package for you if you're looking to take action and are able to commit to the process for the long haul to step into the best version of yourself!</p>
-
-            <p>Additional  'Home Cleanse': a decluttering process with a pre coaching/visualization and coaching conversation throughout (approximately 4 hours - I will come to your home, or it can also be done over skype if distance is an issue)</p>
-
-            <p>This add on is for you if your environment reflects your mind — disorganised, in need of some TLC and cluttered — and you need accountability to stay true to committing to those desired changes (both inside and out)!</p>
-
-            <div class="cta-button">
-              <div onclick="callToAction(4)">
-                <strong>I'm Intrigued, Tell Me More!</strong>
-              </div>
-            </div>
-
-            <div class="been-called">
-              <p>
-                For more information or to arrange a complementary, and obligation free, discovery session (also known as a friendly chat!) contact me on:
-              </p>
-              <p><em>
-                07900 578183
-              </em></p>
-              <p>
-                or at:
-              </p>
-              <p><em class="email">
-                louise@balanceflowbreathe.com
-              </em></p>
-              <p><small onclick="hideCall(4)">[ Hide ]</small></p>
-            </div>
-
-            <div class="testimony-container">
-              <div class="testimony-button"  onclick="showTestimony(2)">
-                <p>Click to read about Richard's experience.</p>
-              </div>
-
-              <div class="testimony">
-                <p>
-                  I was introduced to Louise through a good friend of mine. I have had a number of extremely valuable and thought provoking 1:1 all round sessions (life coaching/lifestyle, health, relaxation and wellbeing) with Louise. The result is that I'm now much more focused on ME - my personal health, fitness and general wellbeing and my happiness. By working closely with Louise I now manage to make time for myself, I am much more effective in my time management and allocation and as a result I am generally much more content with my direction in life. I'd highly, highly recommend working with Louise. It was time well spent as I'm now where I wanted to be.
-                </p>
-                <p>
-                  — Richard, London
-                </p>
-                <p><small onclick="hideTestimony(2)">[ Hide Richard's Testimony ]</small></p>
-              </div>
-            </div>
-
-          </article>
-        </section>
-
-        <div class="divider"><img src="./assets/icons/divider.png" alt="content divider" /></div>
-
-        <section id="home-retreats">
-
-          <h2>Wellbeing with Louise: Home Retreats</h2>
-
-          <article class="retreat1">
-
-            <h3>"Return to Your Senses" Home Retreat</h3>
-            <h5>A holistic introduction to self-care for yourself and your friends or family - a new kind of 'pamper party'.</h5>
-            <p>This is a three hour workshop, held in your own home!  Just bring yourself and some comfy clothes!</p>
-            <p>Healthy snacks will be provided.</p>
-            <p>Each of the below listed practices aims to increase your self awareness and connect you to the present moment... So often nowadays we are living such busy lives – it has become so normalised and accepted to be stressed in some way, in turn our time is used up thinking about the next thing and often we are 'living in our heads' – in our thoughts and can forget to live in the moment.</p>
-            <p>This workshop will introduce ways in which to bring simple strategies into your everyday life, as well as sharing a wonderful experience connecting with friends or family in the comfort of your home.</p>
-            <p>The retreat includes:</p>
-            <ul class="details">
-              <li>Mindful movement – this focuses more on the mind body connection than getting fit and offers a different approach to exercise</li>
-              <li>Mindful eating – a selection of foods will be sampled</li>
-              <li>Meditation – a short introduction to meditation and its benefits</li>
-              <li>Massage – for self care and to connect with loved ones using aromatherapy oils</li>
-            </ul>
-            <p><small class="details-button" onclick="showDetails(3)">[ Show Details ]</small></p>
-
-            <p>Throughout the retreat we will have 'conscious conversations' - real talk and learn ways to truly listen to one another...</p>
-            <p>This is a great way to spend an afternoon connecting with friends and stimulating your senses!</p>
-
-            <div class="cta-button">
-              <div onclick="callToAction(5)">
-                <strong>Let's Return to Our Senses!</strong>
-              </div>
-            </div>
-
-            <div class="been-called">
-              <p>
-                For more information or to arrange a complementary, and obligation free, discovery session (also known as a friendly chat!) contact me on:
-              </p>
-              <p><em>
-                07900 578183
-              </em></p>
-              <p>
-                or at:
-              </p>
-              <p><em class="email">
-                louise@balanceflowbreathe.com
-              </em></p>
-              <p><small onclick="hideCall(5)">[ Hide ]</small></p>
-            </div>
-
-          </article>
-          <article class="retreat2">
-
-            <h3>"Creative Dreaming" Home Retreat</h3>
-            <h5>A creative afternoon for yourself and your friends or family - a new kind of 'pamper party'.</h5>
-            <p>Maybe you're feeling a bit lost or overwhelmed with life, or you've got all of your ducks in a row but still something feels like it's missing? Or perhaps there are things that you really want in life but you can't seem to get at them?</p>
-            <p>This home retreat is a place to give you and a group of your friends time to consider what possibilities you have to truly lead a life you want.</p>
-            <p>This is a three hour workshop, held in your own home!  Just bring yourself and some comfy clothes!</p>
-            <p>Healthy snacks will be provided.</p>
-            <p>The retreat includes:</p>
-            <ul class="details">
-              <li>Guided Visualization – be guided in this light meditation to help you visualize what you truly want in your life!</li>
-              <li>Vision boarding – a practical session in where we get creative! Outcome scissor, glue, sparkles if you like, some chilled music and giggles with friends
-                <ul>
-                  <li>Your vision board could be a theme (work/health/home), what your 'perfect day' looks like or if you're not sure what you want then anything that takes your fancy...</li>
-                </ul>
-              </li>
-              <li>Affirmations and manifesting your dreams – learn tools to make it all happen!</li>
-            </ul>
-            <p><small class="details-button" onclick="showDetails(4)">[ Show Details ]</small></p>
-
-            <p>Each of these practices aims to shine a light on where you are, where you want to be and how to get there!</p>
-            <p>This workshop will increase your self awareness... It will introduce ways in which to bring simple strategies into your everyday life, as well as sharing a wonderful experience connecting with friends or family in the comfort of your home.</p>
-
-            <div class="cta-button">
-              <div onclick="callToAction(6)">
-                <strong>Let's Get Creative Dreaming!</strong>
-              </div>
-            </div>
-
-            <div class="been-called">
-              <p>
-                For more information or to arrange a complementary, and obligation free, discovery session (also known as a friendly chat!) contact me on:
-              </p>
-              <p><em>
-                07900 578183
-              </em></p>
-              <p>
-                or at:
-              </p>
-              <p><em class="email">
-                louise@balanceflowbreathe.com
-              </em></p>
-              <p><small onclick="hideCall(6)">[ Hide ]</small></p>
-            </div>
-
-          </article>
-        </section>
-
-        <div class="divider"><img src="./assets/icons/divider.png" alt="content divider" /></div>
-
-        <section id="other-services">
-          <article>
-
-            <h2>Other services I offer:</h2>
-
-            <ul>
-              <li>
-                Mindfulness Based Stress Reduction (MBSR) — an evidenced based 8 week program delivered either 1:1 or in groups.
-              </li>
-              <li>
-                Workplace Mindfulness Training (WPMT) — a 6 week week mindfulness program specifically designed for the workplace.
-              </li>
-            </ul>
-            <p>Are you based in London or the home counties?!</p>
-            <ul>
-              <li>Massage the mindful way (Indian head massage and aromatherapy also available!)</li>
-              <li>Home Cleanse — Come home to your sanctuary:
-                <ul>
-                  <li>This is no cleaning job, this is teamwork; you and I, and only items that spark joy stay!</li>
-                  <li>Includes coaching and visualization throughout.</li>
-                  <li>Declutter your environment to free your mind.</li>
-                </ul>
-              </li>
-            </ul>
-            <p>I'm adaptable and love to travel; I'm available as a motivational speaker for workshops and events, and a group facilitator for developing team coaching and mindfulness skills as well as health and wellbeing awareness anywhere opportunities arise!</p>
-
-          </article>
-        </section>
-
+        <img class="birdy" src="./assets/images/asdrubal-luna-index-bottom.jpg" alt="robin sittling in a tree" />
       </main>
 
     </div>
 
-    <footer>
-      <img class="mandala" src="./assets/images/blue-mandala.png" alt="blue mandala image"/>
-      <address  id="contact">
-        <p><strong>
-          Louise Hutton
-        </strong></p>
-        <p>
-          Contact me on:
-        </p>
-        <p><em>
-          07900 578183
-        </em></p>
-        <p>
-          or at:
-        </p>
-        <p><em class="email">
-          louise@balanceflowbreathe.com
-        </em></p>
-      </address>
-    </footer>
-
-    <div class="bottom-border"></div>
-
-    <div class="social-container">
-      <ul>
-        <li class="social-icon">
-          <a>
-            <img class="medium" src="./assets/icons/medium.png" alt="medium link" title="medium link coming soon"/>
-          </a>
-        </li>
-        <li class="social-icon">
-          <a>
-            <img class="linkedin" src="./assets/icons/linkedin.png" alt="linkedin link" title="linkedin link coming soon"/>
-          </a>
-        </li>
-        <li class="social-icon">
-          <a href="http://twitter.com/wellbeinglouise" target="_blank">
-            <img class="twitter" src="./assets/icons/twitter.png" alt="twitter link"/>
-          </a>
-        </li>
+    <footer class="bottom-border">
+      <div class="social-container">
+        <ul>
           <li class="social-icon">
-          <a href="http://www.instagram.com/wellbeingwithlouise" target="_blank">
-            <img class="instagram" src="./assets/icons/instagram.png" alt="instagram link"/>
-          </a>
-        </li>
-        <li class="social-icon">
-          <a href="http://www.facebook.com/WellbeingwithLouise" target="_blank">
-            <img class="facebook" src="./assets/icons/facebook.png" alt="facebook link"/>
-          </a>
-        </li>
-      </ul>
-    </div>
+            <a>
+              <img class="medium" src="./assets/icons/medium.png" alt="medium link" title="medium link coming soon"/>
+            </a>
+          </li>
+          <li class="social-icon">
+            <a>
+              <img class="linkedin" src="./assets/icons/linkedin.png" alt="linkedin link" title="linkedin link coming soon"/>
+            </a>
+          </li>
+          <li class="social-icon">
+            <a href="http://twitter.com/wellbeinglouise" target="_blank">
+              <img class="twitter" src="./assets/icons/twitter.png" alt="twitter link"/>
+            </a>
+          </li>
+            <li class="social-icon">
+            <a href="https://www.instagram.com/balanceflowbreathe/" target="_blank">
+              <img class="instagram" src="./assets/icons/instagram.png" alt="instagram link"/>
+            </a>
+          </li>
+          <li class="social-icon">
+            <a href="http://www.facebook.com/WellbeingwithLouise" target="_blank">
+              <img class="facebook" src="./assets/icons/facebook.png" alt="facebook link"/>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>

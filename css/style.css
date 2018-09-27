@@ -13,6 +13,10 @@
   -webkit-box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   font-family: "Hind", Helvetica, Arial, sans-serif;
   font-size: 100%;
@@ -21,19 +25,12 @@ h1, h2, h3, h4, h5 {
   font-family: "Lane", Helvetica, Arial, sans-serif;
 }
 
-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-}
-
 .container {
-  min-width: 330px;
+  min-width: 300px;
   padding: 0 2.5%;
 }
 
-/* navigation / top-border */
-
+/* NAVIGATION */
 nav {
   position: fixed;
   top: 0;
@@ -46,8 +43,8 @@ nav {
 .menu-button {
   float: right;
   cursor: pointer;
-  margin: 0 5% 0 0;
-  padding: 2px 9px;
+  margin: 0 2.5% 0 0;
+  padding: 2px;
 }
 .menu-button > div {
   width: 44px;
@@ -57,7 +54,9 @@ nav {
   margin: 7px 0;
   transition: 0.4s;
 }
-
+.menu-button:hover > div {
+  background-color: rgb(220, 100, 65);
+}
 .change > div:first-child {
   -webkit-transform: rotate(-45deg) translate(-9px, 9px);
   -moz-transform: rotate(-45deg) translate(-9px, 9px);
@@ -89,18 +88,18 @@ nav a:link, nav a:visited {
   color: #000;
   text-decoration: none;
 }
-nav a:focus, nav a:active  {
+nav a:hover, nav a:focus, nav a:active  {
   color: #000;
   text-decoration: underline;
 }
 
-/* main content */
+/* MAIN */
 
-.content-container {
-  background-color: #dbd6cc;
+.pages .content-container {
+  background-color: rgb(229, 218, 212);
+  /* margin-top: 50px; */
+  margin-bottom: 45px;
 }
-
-/* main */
 main {
   padding: 0 2.5%;
   line-height: 1.5;
@@ -108,19 +107,8 @@ main {
 main section {
   max-width: 900px;
   margin: 0 auto;
-  padding: 2em 0 0;
 }
-#intro {
-  max-width: 700px;
-  text-align: center;
-}
-#about-me {
-  max-width: 750px;
-}
-#coaching-intro, #other-services {
-  padding: 2em 0;
-}
-main h2, main h3, main h4, main h5 {
+main h2, main h3 {
   padding: 0.5em 0;
 }
 main h2 {
@@ -131,25 +119,19 @@ main h3 {
   font-size: 1.75em;
 }
 main h4 {
-  font-size: 1.5em;
+  font-size: 1.6em;
 }
 main h5 {
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 main p {
-  padding: 0.5em 0;
-}
-article > ul {
-  padding: 0.5em 1.25em;
-}
-main li {
-  list-style-image: url('../assets/icons/dot.png');
-}
-li > ul {
-  padding: 0 1.25em;
+  font-size: 1.04em;
 }
 em {
   font-size: 1.2em;
+}
+.email {
+  font-size: 1em;
 }
 i {
   font-style: italic;
@@ -161,141 +143,71 @@ strong {
   font-family: "Lane", Helvetica, Arial, sans-serif;
   font-size: 1.6em;
 }
-
-/* head shot */
-.head-shot {
-  margin: 2em auto;
-  border-radius: 50%;
+article > ul {
+  padding: 0.5em 1.25em;
+}
+main li {
+  list-style-image: url('../assets/icons/dot.png');
+  font-size: 1.04rem;
+}
+li > ul {
+  padding: 0 1.25em;
 }
 
-/* cta button */
-.cta-button {
+.button-container {
   padding: 2em;
   text-align: center;
 }
-.cta-button div {
+.cta-button {
   display: inline-block;
-  padding: 0.5em 1em;
-  border: 1px solid dimgray;
+  padding: 1em;
+  border: 1px solid #999;
   background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
-.cta-button div:active {
+
+.cta-button:active {
   background-color: rgba(0, 0, 0, 0.2);
 }
+.cta-button strong {
+  font-family: "Lane", Helvetica, Arial, sans-serif;
+  font-size: 1.6em;
+}
 
-/* been called */
 .been-called {
   display: none;
   max-width: 550px;
-  padding: 0 0 2em;
+  padding: 0.5em 0;
   margin: 0 auto;
   text-align: center;
+  cursor: pointer;
+}
+.been-called p {
+  margin: 0.5em 0;
 }
 .been-called em {
   font-weight: bold;
 }
 .been-called small {
-  text-decoration: underline;
   cursor: pointer;
+  font-size: 0.85em;
 }
-@media only screen and (max-width : 500px) {
-  .email {
-    font-size: 0.8em;
-  }
-}
-
-/* divider */
-.divider {
-  padding: 1em;
-}
-
-/* quote */
-.quote {
-  padding: 1em;
-  text-align: center;
-}
-.quote div {
-  display: inline-block;
-  padding: 0.75em 2em;
-  border: 1px solid dimgray;
-}
-.quote p:last-child {
-  text-align: right;
-}
-
-/* testimony */
-.testimony-container {
-  position: relative;
-  max-width: 770px;
-  min-height: 5em;
-  padding: 0 1.5em 2em;
-  margin: 0 auto;
-  text-align: center;
-}
-.testimony-button {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.been-called small {
   text-decoration: underline;
-  cursor: pointer;
 }
-.testimony {
-  display: none;
-  font-size: 0.95em;
-}
-.testimony p:first-child {
-  text-align: left;
-}
-.testimony p:nth-child(2) {
-  text-align: right;
-}
-.testimony small {
-  text-decoration: underline;
-  cursor: pointer;
+input {
+  font-family: "Hind", Helvetica, Arial, sans-serif;
 }
 
-/* details */
-.details {
-  display: none;
-}
-.details-button {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-
-/* footer */
-
+/* FOOTER */
 footer {
-  background-color: #ffffff;
-  padding: 1em 0 3em;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-#contact p {
-  padding: 0.5em 0;
-}
-#contact p:nth-child(odd) {
-  font-weight: bold;
-}
-#contact p:first-child {
-  font-size: 1.5em;
-  padding: 0.5em 0 2em;
-}
-
-
-.bottom-border {
   width: 100%;
-  height: 50px;
+  min-height: 50px;
   background-color: #ffffff;
   position: fixed;
   left: 0;
   bottom: 0;
 }
-
 
 .social-container {
   position: fixed;
@@ -312,16 +224,16 @@ footer {
   overflow: hidden;
 }
 .social-icon:first-child {
-  margin: 0 0 0 6px;
+  margin: 0;
 }
 .social-icon img {
-  background-color: #8b8074;
+  background-color: #a08c82;
   width: 38px;
   padding: 9px;
   vertical-align: middle;
 }
-.social-icon:active img {
-  background-color: #64828c;
+.social-icon:hover img {
+  background-color: rgb(220, 100, 65);
 }
 .instagram, .medium {
   padding: 8px;
@@ -333,35 +245,21 @@ footer {
   padding: 9px 7px 7px 9px;
 }
 
-@media only screen and (min-width : 600px) {
+@media only screen and (min-width : 500px) {
   .container {
     padding: 0 5%;
   }
-  main {
-    padding: 0 5%;
+  .menu-button {
+    margin: 0 5% 0 0;
   }
-  main h2 {
-    font-size: 2.5em;
-  }
-  main h3 {
-    font-size: 2em;
-  }
-  main h4 {
-    font-size: 1.75em;
-  }
-  main h5 {
-    font-size: 1.5em;
-  }
-  p {
-    font-size: 1.04em;
-  }
-  main ul {
-    font-size: 1.04rem;
+  .email {
+    font-size: 1.2em;
   }
   .social-container {
     right: 5%;
   }
 }
+
 @media only screen and (min-width : 1000px) {
   .container {
     padding: 0 50px;
@@ -379,22 +277,7 @@ footer {
     padding: 0;
     margin: 16px;
   }
-  main {
-    padding: 0 50px;
-  }
   .social-container {
     right: 50px;
   }
 }
-@media only screen and (min-width : 1200px) {
-  nav a:hover  {
-    text-decoration: underline;
-  }
-  #contact {
-    font-size: 1.15em;
-  }
-  .social-icon:hover img {
-    background-color: #507585;
-  }
-}
-/* END */
